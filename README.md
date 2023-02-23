@@ -30,4 +30,17 @@ This project makes use of several different types of scriptable objects.
 
 The `Board` and `BoardItem` scripts implement control over the layout of items on the board. These items may be anything but in this project board items are used to represent the cards in the player's hand and the enemy's creatures on the board.
 
+### Creature and Card
+
+The `Creature` and `Card` scripts derive from `BoardItem` and are used to represent an instance of `Creature_SO` add `Card_SO` respectively.
+
+### Player and Player Controller 
+
+* `Player` implements the core card game abilities of a player: draw, discard, and play card.
+* `PlayerController` parses user input and passes commands to `Player`.
+
+### Enemy
+
+The `Enemy` class implements a simple computer controlled player which manages multiple creatures.
+
 
