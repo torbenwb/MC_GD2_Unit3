@@ -16,3 +16,18 @@ The instruction sequence for this project is as follows:
 * Card Game Player - covers the design and implementation of the `Player` class, capable of drawing, discarding, and playing cards.
 * Card Game Enemy - covers the design and implementation of the `Enemy` and `Creature` classes.
 * Card Effects - covers the implementation of distinct card effects as well as game state management systems.
+
+### Scriptable Objects
+
+This project makes use of several different types of scriptable objects.
+
+* `Card_SO`: represents a unique type of card and contains card data including name, description, cost, image, and effects.
+* `Creature_SO`: represents a unique creature type. Contains creature's attack strength, health, and image.
+* `Deck_SO`: represents a deck of cards. Cards are represented by the nested `CardType` class which contains a unique card type (`Card_SO`) and the quantity of that card type.
+* `GameEvent`: represents a reusable game event. Notifies encapsulated `GameEventListener` when event is raised.
+
+### Board and Board Items
+
+The `Board` and `BoardItem` scripts implement control over the layout of items on the board. These items may be anything but in this project board items are used to represent the cards in the player's hand and the enemy's creatures on the board.
+
+
